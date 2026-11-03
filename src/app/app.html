@@ -12,8 +12,10 @@ It should contain header, menu
   </div>
 </div>
 
-<div class="container-fluid" class="app-border">
-  <div class="row" class="app-border">
+<div class="container-fluid"
+     class="app-border">
+  <div class="row"
+       class="app-border">
     <div class="col">row 1 column 1</div>
     <div class="col">row 1 column 2</div>
   </div>
@@ -22,6 +24,43 @@ It should contain header, menu
     <div class="col">row 2 column 2</div>
   </div>
 </div>
+
+<form class="container">
+  <div class="row">
+    <div class="col-md-3"><label for="title">Title:</label></div>
+    <div class="col-md-9"><input type="text" id="title" name="title"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"><label for="Description">Description:</label></div>
+    <div class="col-md-9"><input type="text" id="Description" name="Description"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"><label for="category">Category:</label></div>
+    <div class="col-md-9"><input type="text" id="category" name="category"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"><label for="level">Level:</label></div>
+    <div class="col-md-9"><input type="text" id="level" name="level"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"><label for="prerequisite">Prerequisite :</label></div>
+    <div class="col-md-9"><input type="text" id="prerequisite" name="prerequisite"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"><label for="tags">Tags:</label></div>
+    <div class="col-md-9"><input type="text" id="tags" name="tags"></div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-3"><label for="copyright">Copyright:</label></div>
+    <div class="col-md-9"><input type="text" id="copyright" name="copyright"></div>
+  </div>
+</form>
 <router-outlet></router-outlet>
 
 And then the footer
