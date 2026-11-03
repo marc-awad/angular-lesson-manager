@@ -1,0 +1,37 @@
+<form class="container">
+  <button type="button" (click)="advanced = !advanced">Basic / Advanced</button>
+
+  <div class="row">
+    <div class="col-md-3">Title:</div>
+    <div class="col-md-9">
+      @if (advanced) {
+        <select class="rounded-3">
+          <option>contains ignore-case</option>
+          <option>like</option>
+          <option>case-insensitive like</option>
+          <option>startsWith</option>
+          <option>exact</option>
+        </select>
+      }
+      <input type="text" class="rounded-3">
+    </div>
+  </div>
+
+  @if (advanced) {
+    <div class="row">
+      <div class="col-md-3">Level:</div>
+      <div class="col-md-9">
+        <input type="number" class="rounded-3" placeholder="min">
+        <input type="number" class="rounded-3" placeholder="max">
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-3">Last Modified Date:</div>
+      <div class="col-md-9">
+        <input type="date" class="rounded-3">
+        <input type="date" class="rounded-3">
+      </div>
+    </div>
+  }
+</form>
