@@ -1,0 +1,40 @@
+<nav class="navbar navbar-expand bg-body-tertiary">
+  <div class="container-fluid">
+    <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link" href="#">🏠</a></li>
+
+      <li class="nav-item" ngbDropdown>
+        <button class="nav-link" ngbDropdownToggle>File</button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Explore lessons</button>
+          <button ngbDropdownItem>Import…</button>
+          <button ngbDropdownItem>New…</button>
+          <button ngbDropdownItem>Export…</button>
+        </div>
+      </li>
+
+      <li class="nav-item"><a class="nav-link" href="#">Study Now</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Progresses Statistics</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Achievements</a></li>
+
+      <li class="nav-item" ngbDropdown>
+        <button class="nav-link" ngbDropdownToggle>Help</button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Glossary</button>
+          <button ngbDropdownItem>Documentation</button>
+          <button ngbDropdownItem>About</button>
+        </div>
+      </li>
+    </ul>
+
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item" ngbDropdown placement="bottom-end">
+        <button class="nav-link" ngbDropdownToggle>Profile</button>
+        <div ngbDropdownMenu>
+          <button ngbDropdownItem>Login / Logout</button>
+          <button ngbDropdownItem>Settings</button>
+        </div>
+      </li>
+    </ul>
+  </div>
+</nav>
