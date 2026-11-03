@@ -1,8 +1,9 @@
 import { Component, signal, OnInit } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
+import {LessonEditForm} from './lesson-edit-form/lesson-edit-form';
 
 @Component({
-  imports: [RouterOutlet],
+  imports: [RouterOutlet, LessonEditForm],
   selector: 'app-root',
   styleUrl: './app.css',
   templateUrl: './app.html',
